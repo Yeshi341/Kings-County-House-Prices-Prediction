@@ -76,6 +76,7 @@ You can view the full analysis in for this project in the [Jupyter Notebook](Bak
 * ├── kc_house_data_test_features.csv: Project holdout data set on which prediction were made
 * ├── model.pickle : Python pickled object referencing the final model
 * ├── model_features.pickle : Python pickled object referencing the final model selected features
+* ├── images : saved images from the project
 
 
 

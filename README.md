@@ -33,17 +33,31 @@ The training dataset on which the model will be built has information on 17290 h
 # Method
 
 The model building process will follow the steps below:
-* 1. Exploratory Analysis
-* 2. Data Cleaning
-* 3. Feature Engineering
-* 4. Train-Test Split
-* 5. Feature Selection
-* 6. Model Evaluation
-* 7. Final Model
+* 1. Exploratory Analysis: Understanding the data before model creation is important. Exploratory Data Analysis or EDA is done by looking at the distribution of data for each of the variables, checking the kind of values present in the dataset. Identifying any variable relationship is also performed here. Much can be learned by also performing descriptive analysis on the data.
+
+* 2. Data Cleaning: Any issues spotted during the EDA process is addressed at this step. Issues like missing values, changing data types etc
+
+* 3. Feature Engineering: The independent variables can be used to build new features that can explain the target variable better and help in builing better models. Feature Engineering can be achieved by manually creating features based on intuition or through automated processes using sklearn.
+
+* 4. Train-Test Split: Train-Test Split is an important step which will reduce the risk of overfitting the model to the dataset. By splitting it to a train and test test, the models can be built using the train set and applied to the test set to predict and test the model strength.
+
+* 5. Feature Selection: While running models, selecting features is an important aspect that differentiates one model from the other. Feature Selection can be achieved by manaual excluding or including features, as well as using various feature selection option like the filter method, wrapper method or the Embedded Method.
+
+* 6. Model Evaluation: Model evaluation can be done on the bases of the magnitude of the Root Mean Squared Error. The smaller the RMSE, the better the model
+
+* 7. Final Model: The final model will be used to predict the target variable or house prices on the hold out data.
 
 # Results
+Four models were created selecting various feature subsets. The RMSE scores from the test predictions for each of the models were
+
+Baseline Model:      159552.8676594423 
+Log Baseline Model:  655070.6539820895 
+Manual Feat Model:   195675.7106643109 
+KBest Model:         189733.51207795765 
+RFE :                158484.35982955483
 
 # Conclusion
+Based on the results, the RFE or Recursive Feature Elimination model performed the best with the least RMSE score.
 
 # For more Information
 ---

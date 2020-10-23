@@ -3,7 +3,7 @@
 This project conducts an analysis on the Seattle, Washington, Kings County Houses attributes data to create a model that will make the best prediction of the price of a house. House prices depend on a lot of factors like the house characteristics, economic environment, housing market, neighborhood, neighboring houses, proximity to amenities etc. According to an article on [Opendoor](https://www.opendoor.com/w/blog/factors-that-influence-home-value) the depending variables can be boiled down to eight critical factors; neighborhood comps, location, home size and usable space, age and condition, upgrades and updates, local market, economic indicators and interest rates.The project will use intuition, statistics and python to build the model.
 
 
-# Data
+## Data
 The data used in this project is based on the following 21 key descriptions of houses sold in Kings County of Seattle, Washington.
 
 * **id** - unique ID for a house
@@ -29,8 +29,11 @@ The data used in this project is based on the following 21 key descriptions of h
 * **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
 
 The training dataset on which the model will be built has information on 17290 houses in the Kings County.
+Here is a heatmap visualization, that tells you the degree of correlation between the variables. The darker the red the stronger the relationship and darker the blue the lesser the relationship. A strong correlation between the features and the target variable price is good while a strong relationship of one feature with another is not.
 
-# Method
+![Heatmap](./images/Degrees-of-correlation.png)
+
+## Method
 
 The model building process will follow the steps below:
 * 1. Exploratory Analysis: Understanding the data before model creation is important. Exploratory Data Analysis or EDA is done by looking at the distribution of data for each of the variables, checking the kind of values present in the dataset. Identifying any variable relationship is also performed here. Much can be learned by also performing descriptive analysis on the data.
@@ -47,24 +50,32 @@ The model building process will follow the steps below:
 
 * 7. Final Model: The final model will be used to predict the target variable or house prices on the hold out data.
 
-# Results
+## Results
 Four models were created selecting various feature subsets. The RMSE scores from the test predictions for each of the models were
 
-Baseline Model:      159552.8676594423 
-Log Baseline Model:  655070.6539820895 
-Manual Feat Model:   195675.7106643109 
-KBest Model:         189733.51207795765 
-RFE :                158484.35982955483
+* Baseline Model:      159552.8676594423 
+* Log Baseline Model:  655070.6539820895 
+* Manual Feat Model:   195675.7106643109 
+* KBest Model:         189733.51207795765 
+* **RFE :                158484.35982955483**
 
-# Conclusion
+## Conclusion
 Based on the results, the RFE or Recursive Feature Elimination model performed the best with the least RMSE score.
 
-# For more Information
+## For more Information
 ---
-You can view the full analysis in for this project in the [Jupyter Notebook]()
+You can view the full analysis in for this project in the [Jupyter Notebook]('Bakeoff_modeling_process.ipynb')
 
-# Repository Structure
+## Repository Structure
 ---
-|-- data
-|-- README.md
-|-- notebook
+
+├── Bakeoff_modeling_process.ipynb : Project analysis explained with documentation
+├── Predict_holdout.ipynb : Project prediction process with final model
+├── README.md : README with project summary for reviewere
+├── housing_preds_Lhamu.csv : Project predictions on holdout set 
+├── kc_house_data_test_features.csv: Project holdout data set on which prediction were made
+├── model.pickle : Python pickled object referencing the final model
+├── model_features.pickle : Python pickled object referencing the final model selected features
+
+
+

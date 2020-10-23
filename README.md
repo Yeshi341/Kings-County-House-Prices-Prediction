@@ -64,18 +64,18 @@ Based on the results, the RFE or Recursive Feature Elimination model performed t
 
 ## For more Information
 ---
-You can view the full analysis in for this project in the [Jupyter Notebook]('Bakeoff_modeling_process.ipynb')
+You can view the full analysis in for this project in the [Jupyter Notebook](Bakeoff_modeling_process.ipynb)
 
 ## Repository Structure
 ---
 
-├── Bakeoff_modeling_process.ipynb : Project analysis explained with documentation
-├── Predict_holdout.ipynb : Project prediction process with final model
-├── README.md : README with project summary for reviewere
-├── housing_preds_Lhamu.csv : Project predictions on holdout set 
-├── kc_house_data_test_features.csv: Project holdout data set on which prediction were made
-├── model.pickle : Python pickled object referencing the final model
-├── model_features.pickle : Python pickled object referencing the final model selected features
+* ├── Bakeoff_modeling_process.ipynb : Project analysis explained with documentation
+* ├── Predict_holdout.ipynb : Project prediction process with final model
+* ├── README.md : README with project summary for reviewere
+* ├── housing_preds_Lhamu.csv : Project predictions on holdout set 
+* ├── kc_house_data_test_features.csv: Project holdout data set on which prediction were made
+* ├── model.pickle : Python pickled object referencing the final model
+* ├── model_features.pickle : Python pickled object referencing the final model selected features
 
 
 

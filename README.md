@@ -4,7 +4,7 @@ This project conducts an analysis on the Seattle, Washington, Kings County House
 
 
 ## Data
-The data used in this project is based on the following 21 key descriptions of houses sold in Kings County of Seattle, Washington.
+The data used in this project is based on the following 21 key descriptions of houses sold in Kings County of Seattle, Washington. Data can be found on kaggle at this [link](https://www.kaggle.com/harlfoxem/housesalesprediction)
 
 * **id** - unique ID for a house
 * **date** - Date day house was sold

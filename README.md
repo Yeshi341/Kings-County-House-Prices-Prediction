@@ -68,7 +68,7 @@ You can view the full analysis in for this project in the [Jupyter Notebook](Bak
 
 ## Repository Structure
 ---
-
+```
 ├── README.md                           <- The top-level README for this project.
 │
 ├── data                                <- Data folder
@@ -88,6 +88,6 @@ You can view the full analysis in for this project in the [Jupyter Notebook](Bak
     ├── model.pickle                    <- Best performing model selected to project predictions
     ├── model_features.pickle           <- Set of features selected for the best performing model
     └── scaler.pkl                      <- Scaler object
-
+```
 
 

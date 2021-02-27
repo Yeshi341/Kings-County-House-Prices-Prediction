@@ -54,7 +54,7 @@ The model building process will follow the steps below:
 Four models were created selecting various feature subsets. The RMSE scores from the test predictions for each of the models were
 
 | Model | RMSE Score |
-| ----- | ---------- |
+| :----- | ----------: |
 | Baseline Model | 159552.87 | 
 | Log Baseline Model | 655070.65 | 
 | Manual Feat Model | 195675.71 | 

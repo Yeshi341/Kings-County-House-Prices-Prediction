@@ -69,14 +69,25 @@ You can view the full analysis in for this project in the [Jupyter Notebook](Bak
 ## Repository Structure
 ---
 
-* ├── Bakeoff_modeling_process.ipynb : Project analysis explained with documentation
-* ├── Predict_holdout.ipynb : Project prediction process with final model
-* ├── README.md : README with project summary for reviewere
-* ├── housing_preds_Lhamu.csv : Project predictions on holdout set 
-* ├── kc_house_data_test_features.csv: Project holdout data set on which prediction were made
-* ├── model.pickle : Python pickled object referencing the final model
-* ├── model_features.pickle : Python pickled object referencing the final model selected features
-* ├── images : saved images from the project
+├── README.md                           <- The top-level README for this project.
+│
+├── data                                <- Data folder
+│   ├── housing_preds_Lhamu.csv         <- Project predictions on holdout set
+│   ├── kc_house_data_test_features.csv <- Project holdout dataset on which predictions are made
+│   └── kc_house_data_train.csv         <- Project holdout dataset on which models are trained.
+│
+├── notebooks                           <- Jupyter Notebooks
+│   ├── Bakeoff_modeling_process.ipynb  <- Project analysis explained with documentation
+│   ├── KC.ipynb                        <- 
+│   └── Predict_holdout.ipynb           <- Project prediction process with final model
+│
+├── images                              <- Visuals created in analysis and images used in repo 
+│
+└── pickles                             <- pickled objects
+    ├── lm2.pkl                         <- Linear Regression model
+    ├── model.pickle                    <- Best performing model selected to project predictions
+    ├── model_features.pickle           <- Set of features selected for the best performing model
+    └── scaler.pkl                      <- Scaler object
 
 
 

@@ -53,11 +53,13 @@ The model building process will follow the steps below:
 ## Results
 Four models were created selecting various feature subsets. The RMSE scores from the test predictions for each of the models were
 
-* Baseline Model:      159552.8676594423 
-* Log Baseline Model:  655070.6539820895 
-* Manual Feat Model:   195675.7106643109 
-* KBest Model:         189733.51207795765 
-* **RFE :                158484.35982955483**
+| Model | RMSE Score |
+| ----- | ---------- |
+| Baseline Model | 159552.87 | 
+| Log Baseline Model | 655070.65 | 
+| Manual Feat Model | 195675.71 | 
+| KBest Model | 189733.51 | 
+| **RFE** | **158484.36** |
 
 ## Conclusion
 Based on the results, the RFE or Recursive Feature Elimination model performed the best with the least RMSE score.
